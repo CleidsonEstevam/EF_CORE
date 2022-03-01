@@ -63,3 +63,8 @@ C:\Users\cleid\Desktop\EF_PEDIDOS\Pedidos\Pedidos\obj\Debug\netcoreapp3.1\Pedido
 C:\Users\cleid\Desktop\EF_PEDIDOS\Pedidos\Pedidos\obj\Debug\netcoreapp3.1\Pedidos.dll
 C:\Users\cleid\Desktop\EF_PEDIDOS\Pedidos\Pedidos\obj\Debug\netcoreapp3.1\Pedidos.pdb
 C:\Users\cleid\Desktop\EF_PEDIDOS\Pedidos\Pedidos\obj\Debug\netcoreapp3.1\Pedidos.genruntimeconfig.cache
+C:\Users\cleid\Desktop\EF_PEDIDOS\Pedidos\Pedidos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\cleid\Desktop\EF_PEDIDOS\Pedidos\Pedidos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\cleid\Desktop\EF_PEDIDOS\Pedidos\Pedidos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\cleid\Desktop\EF_PEDIDOS\Pedidos\Pedidos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+C:\Users\cleid\Desktop\EF_PEDIDOS\Pedidos\Pedidos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
