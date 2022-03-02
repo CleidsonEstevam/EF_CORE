@@ -2,6 +2,7 @@
 using Pedidos.Domain;
 using Pedidos.Enums;
 using System;
+using System.Linq;
 
 namespace Pedidos
 {
@@ -10,9 +11,11 @@ namespace Pedidos
         static void Main(string[] args)
         {
             //InserirDados();
-            InserirDadosEmMassa();
+            //InserirDadosEmMassa();
+            ConsultarDados();
         }
 
+        #region "Insert"
         private static void InserirDados()
         {
             var produto = new Produto
@@ -86,5 +89,28 @@ namespace Pedidos
             var registros = db.SaveChanges();
             Console.WriteLine(registros);
         }
+        #endregion
+
+        #region "Consultar"
+        private static void ConsultarDados() 
+        {
+            using var db = new Data.ApplicationContext();
+            //var consultarPorSintaxe = (from c in db.Clientes where c.Id > 0 select c).ToList();
+            var consultaPorMetodo = db.Clientes
+                .Where(p => p.Id > 0)
+                .OrderBy(p => p.Id)
+                //Para que o Entity não salve as consultas em memória quando usando o FIND
+                //.AsNoTracking()
+                .ToList();
+            foreach (var cliente in consultaPorMetodo) 
+            {
+                Console.WriteLine($"Consultando Cliente: {cliente.Id}");
+                //Find busca pimeiro no mapeamento da memoria para depois ir ao banco
+                //db.Clientes.Find(cliente.Id);
+                db.Clientes.FirstOrDefault(p => p.Id == cliente.Id);
+            }
+
+        }
+        #endregion
     }
 }
