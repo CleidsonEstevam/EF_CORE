@@ -4,7 +4,7 @@
 </h1>
 <p align="center" height="400" width="400">
  <a href="#resumo">Resumo</a> •
- <a href="#exemplo">Problemas resolvidos pelo SOLID</a> •
+ <a href="#exemplo">Vantagens do Entity</a> •
  <a href="#extras">Extras</a> •
  <a href="#autor">Autor</a> 
 </p>
@@ -12,3 +12,4 @@
 <p>O Entity Framework Core é a nova versão do Entity Framework após o EF 6.x. É de código aberto, leve, extensível e uma versão multiplataforma da tecnologia de acesso a dados do Entity Framework.<br/>
 O Framework é uma estrutura de mapeamento de objeto/relacional (O/RM). É um aprimoramento do ADO.NET que oferece aos desenvolvedores um mecanismo automatizado para acessar e armazenar os dados no banco de dados.</p>
 <br/>
+🚧Repositório em construção🚧
