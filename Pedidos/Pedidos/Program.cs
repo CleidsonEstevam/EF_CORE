@@ -15,6 +15,7 @@ namespace Pedidos
             //InserirDadosEmMassa();
             //ConsultarDados();
             //CadastrarPedido();
+            AlterarCliente();
         }
 
         #region "Insert"
@@ -129,7 +130,7 @@ namespace Pedidos
         }
         #endregion
 
-        #region "Consultar"
+        #region "Select"
         /// <summary>
         /// Consulta Simples
         /// </summary>
@@ -175,6 +176,29 @@ namespace Pedidos
 
             Console.WriteLine(pedidos.Count);
         }
+        #endregion
+
+        #region "Update"
+        private static void AlterarCliente() 
+        {
+            using var db = new Data.ApplicationContext();
+            var cliente = db.Clientes.FirstOrDefault(p => p.Id == 1);
+            cliente.Nome = "Cliente alterado para teste";
+            //Se passar o update todas as entidades rastreadas vão sofrer alteração
+            //db.Clientes.Update(cliente);
+            db.SaveChanges();
+        }
+        private static void AlterarClienteDesconectado()
+        {
+            using var db = new Data.ApplicationContext();
+            var cliente = db.Clientes.FirstOrDefault(p => p.Id == 1);
+
+            var clienteDesc = "Cleidson Teste";
+            db.Entry(cliente).CurrentValues.SetValues(clienteDesc);
+
+            db.SaveChanges();
+        }
+
         #endregion
 
 
