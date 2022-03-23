@@ -2,7 +2,7 @@
 <h1 align="center">
 <img src="https://github.com/CleidsonEstevam/EF_CORE/blob/main/Imagem/transferir.png" height="200" width="400"/>
 </h1>
-<h1 align="center">🚧  REPOSITÓRIO EM CONSTRUÇÃO! 🚧<H1/>
+
 <p align="center" height="400" width="400">
  <a href="#resumo">Resumo</a> •
  <a href="#exemplo">Vantagens do Entity</a> •
